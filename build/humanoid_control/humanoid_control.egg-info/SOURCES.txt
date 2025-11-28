@@ -10,6 +10,7 @@ setup.py
 ../../build/humanoid_control/humanoid_control.egg-info/zip-safe
 humanoid_control/__init__.py
 humanoid_control/motion_generator.py
+humanoid_control/perception_sim.py
 humanoid_control/system_supervisor.py
 launch/hackathon_bringup.launch.py
 resource/humanoid_control

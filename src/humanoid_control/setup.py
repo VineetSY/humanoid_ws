@@ -28,6 +28,7 @@ setup(
         'console_scripts': [
             'system_supervisor = humanoid_control.system_supervisor:main',
             'motion_generator = humanoid_control.motion_generator:main',
+            'perception_sim = humanoid_control.perception_sim:main',
         ],
     },
 )
