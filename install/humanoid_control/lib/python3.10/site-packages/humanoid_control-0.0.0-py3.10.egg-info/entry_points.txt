@@ -1,0 +1,4 @@
+[console_scripts]
+motion_generator = humanoid_control.motion_generator:main
+system_supervisor = humanoid_control.system_supervisor:main
+

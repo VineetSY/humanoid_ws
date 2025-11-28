@@ -1,0 +1,37 @@
+[0.000000] (-) TimerEvent: {}
+[0.000110] (humanoid_control) JobQueued: {'identifier': 'humanoid_control', 'dependencies': OrderedDict()}
+[0.000129] (humanoid_control) JobStarted: {'identifier': 'humanoid_control'}
+[0.098133] (-) TimerEvent: {}
+[0.199435] (-) TimerEvent: {}
+[0.324644] (-) TimerEvent: {}
+[0.426823] (-) TimerEvent: {}
+[0.527366] (-) TimerEvent: {}
+[0.628741] (-) TimerEvent: {}
+[0.729843] (-) TimerEvent: {}
+[0.815488] (humanoid_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/humanoid_control', 'build', '--build-base', '/home/vineet/humanoid_ws/build/humanoid_control/build', 'install', '--record', '/home/vineet/humanoid_ws/build/humanoid_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vineet/humanoid_ws/src/humanoid_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'vineet', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'HOME': '/home/vineet', 'OLDPWD': '/home/vineet', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2706', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'vineet', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vineet', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/vineet/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu22:@/tmp/.ICE-unix/2670,unix/ubuntu22:/tmp/.ICE-unix/2670', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dbfa060b_da9b_4965_a04a_6e2b34519c5f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2F3XG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.123', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vineet/humanoid_ws/build/humanoid_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/home/vineet/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/vineet/humanoid_ws/build/humanoid_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages:'}, 'shell': False}
+[0.833914] (-) TimerEvent: {}
+[0.935756] (-) TimerEvent: {}
+[0.953479] (humanoid_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.953701] (humanoid_control) StdoutLine: {'line': b'writing ../../build/humanoid_control/humanoid_control.egg-info/PKG-INFO\n'}
+[0.955733] (humanoid_control) StdoutLine: {'line': b'writing dependency_links to ../../build/humanoid_control/humanoid_control.egg-info/dependency_links.txt\n'}
+[0.956273] (humanoid_control) StdoutLine: {'line': b'writing entry points to ../../build/humanoid_control/humanoid_control.egg-info/entry_points.txt\n'}
+[0.956999] (humanoid_control) StdoutLine: {'line': b'writing requirements to ../../build/humanoid_control/humanoid_control.egg-info/requires.txt\n'}
+[0.957155] (humanoid_control) StdoutLine: {'line': b'writing top-level names to ../../build/humanoid_control/humanoid_control.egg-info/top_level.txt\n'}
+[0.960465] (humanoid_control) StdoutLine: {'line': b"reading manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'\n"}
+[0.961794] (humanoid_control) StdoutLine: {'line': b"writing manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'\n"}
+[0.962040] (humanoid_control) StdoutLine: {'line': b'running build\n'}
+[0.962078] (humanoid_control) StdoutLine: {'line': b'running build_py\n'}
+[0.964793] (humanoid_control) StdoutLine: {'line': b'running install\n'}
+[0.964939] (humanoid_control) StdoutLine: {'line': b'running install_lib\n'}
+[0.967777] (humanoid_control) StdoutLine: {'line': b'running install_data\n'}
+[0.970477] (humanoid_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.972782] (humanoid_control) StdoutLine: {'line': b"removing '/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.973106] (humanoid_control) StdoutLine: {'line': b'Copying ../../build/humanoid_control/humanoid_control.egg-info to /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control-0.0.0-py3.10.egg-info\n'}
+[0.974930] (humanoid_control) StdoutLine: {'line': b'running install_scripts\n'}
+[0.988958] (humanoid_control) StdoutLine: {'line': b'Installing motion_generator script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control\n'}
+[0.989848] (humanoid_control) StdoutLine: {'line': b'Installing system_supervisor script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control\n'}
+[0.992325] (humanoid_control) StdoutLine: {'line': b"writing list of installed files to '/home/vineet/humanoid_ws/build/humanoid_control/install.log'\n"}
+[1.014624] (humanoid_control) CommandEnded: {'returncode': 0}
+[1.036072] (-) TimerEvent: {}
+[1.042748] (humanoid_control) JobEnded: {'identifier': 'humanoid_control', 'rc': 0}
+[1.043336] (-) EventReactorShutdown: {}

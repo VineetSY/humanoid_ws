@@ -1,0 +1,45 @@
+[0.519s] Invoking command in '/home/vineet/humanoid_ws/src/humanoid_control': PYTHONPATH=/home/vineet/humanoid_ws/build/humanoid_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/humanoid_control build --build-base /home/vineet/humanoid_ws/build/humanoid_control/build install --record /home/vineet/humanoid_ws/build/humanoid_control/install.log --single-version-externally-managed install_data
+[0.694s] running egg_info
+[0.697s] creating ../../build/humanoid_control/humanoid_control.egg-info
+[0.697s] writing ../../build/humanoid_control/humanoid_control.egg-info/PKG-INFO
+[0.697s] writing dependency_links to ../../build/humanoid_control/humanoid_control.egg-info/dependency_links.txt
+[0.697s] writing entry points to ../../build/humanoid_control/humanoid_control.egg-info/entry_points.txt
+[0.697s] writing requirements to ../../build/humanoid_control/humanoid_control.egg-info/requires.txt
+[0.697s] writing top-level names to ../../build/humanoid_control/humanoid_control.egg-info/top_level.txt
+[0.697s] writing manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'
+[0.698s] reading manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'
+[0.698s] writing manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'
+[0.699s] running build
+[0.699s] running build_py
+[0.699s] creating /home/vineet/humanoid_ws/build/humanoid_control/build
+[0.699s] creating /home/vineet/humanoid_ws/build/humanoid_control/build/lib
+[0.699s] creating /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.699s] copying humanoid_control/system_supervisor.py -> /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.699s] copying humanoid_control/__init__.py -> /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.699s] copying humanoid_control/motion_generator.py -> /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.700s] running install
+[0.700s] running install_lib
+[0.701s] creating /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.701s] copying /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control/system_supervisor.py -> /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.702s] copying /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control/__init__.py -> /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.702s] copying /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control/motion_generator.py -> /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.702s] byte-compiling /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control/system_supervisor.py to system_supervisor.cpython-310.pyc
+[0.703s] byte-compiling /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control/__init__.py to __init__.cpython-310.pyc
+[0.703s] byte-compiling /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control/motion_generator.py to motion_generator.cpython-310.pyc
+[0.704s] running install_data
+[0.704s] creating /home/vineet/humanoid_ws/install/humanoid_control/share/ament_index
+[0.704s] creating /home/vineet/humanoid_ws/install/humanoid_control/share/ament_index/resource_index
+[0.704s] creating /home/vineet/humanoid_ws/install/humanoid_control/share/ament_index/resource_index/packages
+[0.704s] copying resource/humanoid_control -> /home/vineet/humanoid_ws/install/humanoid_control/share/ament_index/resource_index/packages
+[0.704s] copying package.xml -> /home/vineet/humanoid_ws/install/humanoid_control/share/humanoid_control
+[0.705s] creating /home/vineet/humanoid_ws/install/humanoid_control/share/humanoid_control/launch
+[0.705s] copying launch/hackathon_bringup.launch.py -> /home/vineet/humanoid_ws/install/humanoid_control/share/humanoid_control/launch
+[0.705s] creating /home/vineet/humanoid_ws/install/humanoid_control/share/humanoid_control/urdf
+[0.705s] copying urdf/humanoid_32dof.urdf.xacro -> /home/vineet/humanoid_ws/install/humanoid_control/share/humanoid_control/urdf
+[0.705s] running install_egg_info
+[0.707s] Copying ../../build/humanoid_control/humanoid_control.egg-info to /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control-0.0.0-py3.10.egg-info
+[0.708s] running install_scripts
+[0.725s] Installing motion_generator script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.726s] Installing system_supervisor script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.726s] writing list of installed files to '/home/vineet/humanoid_ws/build/humanoid_control/install.log'
+[0.755s] Invoked command in '/home/vineet/humanoid_ws/src/humanoid_control' returned '0': PYTHONPATH=/home/vineet/humanoid_ws/build/humanoid_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/humanoid_control build --build-base /home/vineet/humanoid_ws/build/humanoid_control/build install --record /home/vineet/humanoid_ws/build/humanoid_control/install.log --single-version-externally-managed install_data
