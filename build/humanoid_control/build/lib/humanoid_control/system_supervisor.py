@@ -8,7 +8,7 @@ from std_srvs.srv import SetBool
 class SystemSupervisor(Node):
     def __init__(self):
         super().__init__('system_supervisor')
-        self.get_logger().info('Initializing Main Robotics Processing Unit...')
+        self.get_logger().info('Initializing Main Robotics Processing Unit with LOAD MANAGEMENT...')
         
         # State
         self.system_state = "STANDBY"
@@ -16,6 +16,7 @@ class SystemSupervisor(Node):
         
         # Inputs
         self.perception_sub = self.create_subscription(String, '/perception/detected_object', self.perception_callback, 10)
+        self.load_sub = self.create_subscription(Float32, '/sensors/grip_load', self.load_callback, 10)
         self.joint_sub = self.create_subscription(JointState, '/joint_states', self.joint_callback, 10)
         self.temp_sub = self.create_subscription(Float32, '/sensors/core_temp', self.temp_callback, 10)
         self.srv_teleop = self.create_service(SetBool, '/control/request_teleop', self.handle_teleop_request)
@@ -23,25 +24,41 @@ class SystemSupervisor(Node):
         self.timer = self.create_timer(0.1, self.control_loop)
 
     def perception_callback(self, msg):
-        """Reacts to sensory info from Perception Unit"""
         if self.system_state == "FAILSAFE":
             return
-
-        obj_type = msg.data
-        self.get_logger().info(f'PROCESSING UNIT: Analysis complete. Target identified: {obj_type}')
         
+        obj_type = msg.data
         if obj_type == "TARGET_LEFT":
             self.system_state = "REACH_LEFT"
+            self.get_logger().info(f'TARGET ACQUIRED: Reaching Left.')
         elif obj_type == "TARGET_RIGHT":
             self.system_state = "REACH_RIGHT"
+            self.get_logger().info(f'TARGET ACQUIRED: Reaching Right.')
         elif obj_type == "CLEAR":
             self.system_state = "AUTO"
+            self.get_logger().info(f'Area Clear. Returning to Idle.')
+
+    def load_callback(self, msg):
+        """
+        LOAD MANAGEMENT LOGIC
+        CRITICAL: Checks if lifted weight exceeds safety limits (20kg)
+        """
+        current_load = msg.data
+        self.get_logger().info(f'LOAD SENSOR: Detected Mass: {current_load} kg')
+
+        # Threshold Check
+        if current_load > 20.0:
+            self.get_logger().error(f'SAFETY VIOLATION: Load {current_load}kg > Limit 20kg!')
+            self.trigger_failsafe("OVERLOAD_DETECTED")
+        else:
+            # If load is safe AND we are reaching, proceed to lift
+            if "REACH" in self.system_state:
+                self.system_state = "LIFTING"
+                self.get_logger().info(f'Load {current_load}kg Accepted. Commencing LIFT sequence.')
 
     def joint_callback(self, msg):
-        # Monitor motor load (Simulated)
         if msg.velocity:
             max_vel = max([abs(v) for v in msg.velocity])
-            # If velocity is high, load is high.
             if max_vel > 4.0: 
                 self.trigger_failsafe("MOTOR_OVERLOAD_PROTECTION")
 
@@ -65,7 +82,7 @@ class SystemSupervisor(Node):
 
     def trigger_failsafe(self, reason):
         if self.system_state != "FAILSAFE":
-            self.get_logger().error(f'CRITICAL: {reason}. CUTTING MOTOR POWER -> LIMP HOME.')
+            self.get_logger().error(f'CRITICAL FAILURE: {reason}. ENGAGING SAFETY PROTOCOLS.')
             self.system_state = "FAILSAFE"
 
     def control_loop(self):

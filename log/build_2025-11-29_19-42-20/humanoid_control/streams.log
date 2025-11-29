@@ -1,0 +1,30 @@
+[0.481s] Invoking command in '/home/vineet/humanoid_ws/src/humanoid_control': PYTHONPATH=/home/vineet/humanoid_ws/build/humanoid_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/humanoid_control build --build-base /home/vineet/humanoid_ws/build/humanoid_control/build install --record /home/vineet/humanoid_ws/build/humanoid_control/install.log --single-version-externally-managed install_data
+[0.649s] running egg_info
+[0.649s] writing ../../build/humanoid_control/humanoid_control.egg-info/PKG-INFO
+[0.650s] writing dependency_links to ../../build/humanoid_control/humanoid_control.egg-info/dependency_links.txt
+[0.652s] writing entry points to ../../build/humanoid_control/humanoid_control.egg-info/entry_points.txt
+[0.652s] writing requirements to ../../build/humanoid_control/humanoid_control.egg-info/requires.txt
+[0.653s] writing top-level names to ../../build/humanoid_control/humanoid_control.egg-info/top_level.txt
+[0.654s] reading manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'
+[0.655s] writing manifest file '../../build/humanoid_control/humanoid_control.egg-info/SOURCES.txt'
+[0.655s] running build
+[0.656s] running build_py
+[0.656s] copying humanoid_control/object_spawner.py -> /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.656s] copying humanoid_control/motion_generator.py -> /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control
+[0.656s] running install
+[0.658s] running install_lib
+[0.658s] copying /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control/object_spawner.py -> /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.659s] copying /home/vineet/humanoid_ws/build/humanoid_control/build/lib/humanoid_control/motion_generator.py -> /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control
+[0.659s] byte-compiling /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control/object_spawner.py to object_spawner.cpython-310.pyc
+[0.665s] byte-compiling /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control/motion_generator.py to motion_generator.cpython-310.pyc
+[0.665s] running install_data
+[0.665s] running install_egg_info
+[0.667s] removing '/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control-0.0.0-py3.10.egg-info' (and everything under it)
+[0.669s] Copying ../../build/humanoid_control/humanoid_control.egg-info to /home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages/humanoid_control-0.0.0-py3.10.egg-info
+[0.670s] running install_scripts
+[0.690s] Installing motion_generator script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.690s] Installing object_spawner script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.691s] Installing perception_sim script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.691s] Installing system_supervisor script to /home/vineet/humanoid_ws/install/humanoid_control/lib/humanoid_control
+[0.692s] writing list of installed files to '/home/vineet/humanoid_ws/build/humanoid_control/install.log'
+[0.712s] Invoked command in '/home/vineet/humanoid_ws/src/humanoid_control' returned '0': PYTHONPATH=/home/vineet/humanoid_ws/build/humanoid_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vineet/humanoid_ws/install/humanoid_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/humanoid_control build --build-base /home/vineet/humanoid_ws/build/humanoid_control/build install --record /home/vineet/humanoid_ws/build/humanoid_control/install.log --single-version-externally-managed install_data

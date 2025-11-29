@@ -36,6 +36,12 @@ def generate_launch_description():
             output='screen'
         ),
         Node(
+            package='humanoid_control',
+            executable='object_spawner',
+            name='object_simulation',
+            output='screen'
+        ),
+        Node(
             package='rviz2',
             executable='rviz2',
             name='rviz2',
