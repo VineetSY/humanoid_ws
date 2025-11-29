@@ -12,7 +12,10 @@ class ObjectSpawner(Node):
         self.current_state = "STANDBY"
         self.timer = self.create_timer(0.05, self.timer_callback)
         
-        self.floor_x = 0.5; self.floor_y = 0.3; self.floor_z = 0.1 
+        # FAR AWAY COORDINATES
+        self.floor_x = 1.5
+        self.floor_y = 0.5 
+        self.floor_z = 0.1 
 
     def state_callback(self, msg):
         self.current_state = msg.data
@@ -25,23 +28,14 @@ class ObjectSpawner(Node):
         marker.color.a = 1.0; marker.color.r = 1.0; marker.color.g = 0.0; marker.color.b = 0.0
 
         if self.current_state == "LIFTING":
-            # === FIX: OFFSET OBJECT TO PALM ===
             marker.header.frame_id = "left_hand"
-            marker.pose.position.x = 0.0   # Center X
-            marker.pose.position.y = 0.0   # Center Y
-            marker.pose.position.z = -0.15 # Move DOWN (towards fingertips) to avoid clipping wrist
-            
+            marker.pose.position.x = 0.0; marker.pose.position.y = 0.0; marker.pose.position.z = -0.15
         elif self.current_state == "FAILSAFE":
             marker.header.frame_id = "world"
-            marker.pose.position.x = self.floor_x
-            marker.pose.position.y = self.floor_y
-            marker.pose.position.z = 0.0 
+            marker.pose.position.x = self.floor_x; marker.pose.position.y = self.floor_y; marker.pose.position.z = 0.0 
         else:
             marker.header.frame_id = "world"
-            marker.pose.position.x = self.floor_x
-            marker.pose.position.y = self.floor_y
-            marker.pose.position.z = self.floor_z
-
+            marker.pose.position.x = self.floor_x; marker.pose.position.y = self.floor_y; marker.pose.position.z = self.floor_z
         self.publisher_.publish(marker)
 
 def main(args=None):
